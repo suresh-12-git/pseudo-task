@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+        display:inline-flex;
+       }
+        section div{
+        background-color: rgb(31, 34, 34);
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       } 
+       img{
+        height: 200px;
+        width: 200px;
+        display: none;
+        object-fit: cover;
+       }
+       a{
+        display: none;
+       }
+       div:hover>a{
+       display: block;
+       }
+       div:hover>a , div:active>img{
+        display: block;
+       }
+       div:active>a{
+        display:none;
+       }
+       a:link{
+       
+        background-color: white;
+       }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div>
+            <a href="">deer</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMT7nBUkgYllh4Gz9m4HsebRv_EUQozLgb_w&s" alt="">
+        </div>
+        <div>
+            <a href="">rabbit</a>
+            <img src="https://i.pinimg.com/originals/b8/25/e1/b825e1484a21bb183466a3890df21c39.jpg" alt="">
+        </div>
+        <div>
+            <a href="">lion</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbHj3u07HFIPsBsTH1O7YVCfVCsaakOzrv4g&s" alt="">
+        </div>
+        <div>
+            <a href="">peacock</a>
+            <img src="https://www.shutterstock.com/image-photo/one-peacock-stands-beautiful-feathers-260nw-2381826827.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
